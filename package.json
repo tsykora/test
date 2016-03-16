@@ -28,8 +28,10 @@
     "async": "^1.4.2",
     "connect-livereload": "^0.5.3",
     "del": "^1.1.1",
+    "druid-query": "1.0.0",
     "express": "~4.13.1",
     "extend": "^3.0.0",
+    "facetjs-druid-requester": "1.1.7",    
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-filter": "^2.0.2",
@@ -58,6 +60,7 @@
     "tiny-lr": "^0.2.1",
     "open": "0.0.5",
     "reflect-metadata": "^0.1.2",
+    "requirejs": "2.1.22",
     "run-sequence": "^1.1.0",
     "semver": "^5.0.3",
     "serve-static": "^1.9.2",
@@ -76,8 +79,10 @@
   "dependencies": {
     "angular2": "2.0.0-alpha.44",
     "bootstrap": "^3.3.5",
+    "druid-query": "^1.0.0",
     "es6-module-loader": "^0.17.8",
     "es6-shim": "^0.33.6",
+    "facetjs-druid-requester": "1.1.7", 
     "systemjs": "^0.19.4"
   }
 }

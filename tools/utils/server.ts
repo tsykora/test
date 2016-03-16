@@ -6,6 +6,8 @@ import * as serveStatic from 'serve-static';
 import {resolve} from 'path';
 import {APP_BASE, LIVE_RELOAD_PORT, DOCS_PORT, PATH, PORT, ENV} from '../config';
 
+import {connectToDruid} from './druid-connector';
+
 let tinylr = tinylrFn();
 
 
@@ -24,8 +26,11 @@ export function serveSPA() {
   );
 
   server.listen(PORT, () =>
-    openResource('localhost:' + PORT + APP_BASE, 'firefox')     // Zmenit na vychozi prohlizec
+    openResource('localhost:' + PORT + APP_BASE, 'firefox')
   );
+  
+  // dummy connection to locally running Druid example wikipedia service 
+  connectToDruid();
 }
 
 export function notifyLiveReload(e) {

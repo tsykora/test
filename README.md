@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/infinispan/infispector/master/logo/logo.jpg" width="276" height="109">
+<img src="https://raw.githubusercontent.com/infinispan/infispector/master/img/logo.jpg" width="276" height="109">
 
 Infinispan messages history,<br/>
 is never more a mystery.<br/>
