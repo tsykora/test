@@ -8,6 +8,7 @@
   "framework": "Express, Angular",
   "dependencies": {
     "express": "3.0.0",
+    "no-kafka-slim": ">= 0.1.0",
     "ejs": ">= 0.8.3",
     "mongoose": ">= 3.6.1",
     "crypto": ">= 0.0.3",
