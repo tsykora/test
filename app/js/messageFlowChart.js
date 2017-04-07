@@ -1,4 +1,4 @@
-/*! InfiSpector - v0.0.1 - 2017-03-06
+/*! InfiSpector - v0.0.1 - 2017-04-07
  * https://github.com/infinispan/infispector/
  * Copyright (c) 2017 ;
  * Licensed 
@@ -331,7 +331,7 @@ function messageFlowChart(nodes, matrix, messageType) {
     if (elements === null) {
         elements = [];
     }
-    elements.length%2 ? varFloat = "right" : varFloat = "left";
+    elements.length%2 ? varFloat = "left" : varFloat = "right";
     var width = 650, height = 610, margin ={b:0, t:40, l:170, r:50};
     
     var div = d3.select("#graphs").append("div").attr("class", "graph").style("float", varFloat);

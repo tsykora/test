@@ -1,4 +1,4 @@
-/*! InfiSpector - v0.0.1 - 2017-03-06
+/*! InfiSpector - v0.0.1 - 2017-04-07
  * https://github.com/infinispan/infispector/
  * Copyright (c) 2017 ;
  * Licensed 
@@ -69,42 +69,22 @@ function timeLine(timeStampsArg, timeScaleArg, multiplier) {
     var x = d3.scale.linear()
             .domain([0, timeStamps * multiplier])
             .range([0, width - 5]);
-    
-    var y = d3.scale.linear()
-            .domain([highestValue, 0])
-            .range([0, height]);
 
     var xAxis = d3.svg.axis()           //x axis
             .scale(x)
             .orient("bottom");
-    
-    var yAxis = d3.svg.axis()
-                .scale(y)
-                .orient("left");
 
     var canvas = d3.select("#timeLineDiv").append("svg")
-            .attr("width", width + 100)
+            .attr("width", width)
             .attr("height", height + 140)                        // need to add some height, so axis and axis description fits in
             .attr("id", "timeLine")
             .append("g")
-            .attr("transform", "translate(60,60)");       //creating canvas
+            .attr("transform", "translate(0,0)");       //creating canvas
 
     var group = canvas.append("g")
-            .attr("transform", "translate(-0," + (height) + ")")
+            .attr("transform", "translate(-2.5," + (height) + ")")
             .attr("class", "axis")
             .call(xAxis);                                       // adding axis
-
-    canvas.append("g")
-                    .attr("transform", "translate(-1,0)")
-                    .attr("class", "axis")
-                    .call(yAxis);
-
-            canvas.append("text")
-                    .attr("x", -50)
-                    .attr("y", -30)
-                    .attr("transform", "rotate(270)")
-                    .style("text-anchor", "middle")
-                    .text("Number of messages");
 
     canvas.append("text")                                           // adding axis description
             .attr("x", width / 2)

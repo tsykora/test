@@ -1,4 +1,4 @@
-/*! InfiSpector - v0.0.1 - 2017-03-06
+/*! InfiSpector - v0.0.1 - 2017-04-07
  * https://github.com/infinispan/infispector/
  * Copyright (c) 2017 ;
  * Licensed 
@@ -23,7 +23,7 @@ function chordDiagram(options, matrix, messageType) {
     if (elements === null) {
         elements = [];
     }
-    elements.length%2 ? varFloat = "right" : varFloat = "left";
+    elements.length%2 ? varFloat = "left" : varFloat = "right";
 
    // set chord visualization variables from the configuration object
    var offset = Math.PI * config.rotation,
