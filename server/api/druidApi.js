@@ -7,7 +7,7 @@ exports.queryDruid = function (request, response) {
     console.log('queryDruid function from druidApi.js was called. '
             + request.body.payload + " " + request.body.myQuery);
 
-    var params = {host: "0.0.0.0:8084", debug: "true"};
+    var params = {host: "druid-solo:8084", debug: "true"};
     var druidRequester = require('facetjs-druid-requester').druidRequesterFactory(params);
 
     druidRequester({
