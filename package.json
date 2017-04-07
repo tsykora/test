@@ -38,6 +38,7 @@
     "load-grunt-tasks": "^3.1.0"
   },
   "scripts": {
+      "prepare":"grunt",
       "start": "node app.js"
   }
 }
